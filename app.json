@@ -1,6 +1,8 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/node/node",
+    "pages/topic/topic"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,6 +14,8 @@
     "color":"#9DACB7",
     "selectedColor": "#34B457",
     "backgroundColor":"#F7F7F9",
+    "borderStyle": "black",
+    "position":"bottom",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -20,13 +24,13 @@
         "selectedIconPath": "images/tabBar/index-hl.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/topic/topic",
         "text": "话题",
         "iconPath":"images/tabBar/chat.png",
         "selectedIconPath": "images/tabBar/chat-hl.png"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/node/node",
         "text": "节点",
         "iconPath":"images/tabBar/node.png",
         "selectedIconPath": "images/tabBar/node-hl.png"

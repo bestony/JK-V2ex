@@ -1,20 +1,20 @@
 Page({
-  data:{
+  data: {
+
+  },
+  onLoad: function (options) {
+
+  },
+  onReady: function () {
     
   },
-  onLoad:function(options){
-    
+  onShow: function () {
+
   },
-  onReady:function(){
-    
+  onHide: function () {
+
   },
-  onShow:function(){
-    
-  },
-  onHide:function(){
-   
-  },
-  onUnload:function(){
-    
+  onUnload: function () {
+
   }
 })

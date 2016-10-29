@@ -1,0 +1,14 @@
+<view style="display:flex;flex-direction: column;margin:10px;">
+    <text style="font-size:20px;">V2EX 在横向分辨率较小时很不理想222222222222222</text>
+    <view style="font-size:14px;color:#888;margin-top:10px;margin-bottom:10px;">
+        <text>xhacker</text>
+        <text style="margin-left:20px;">时间</text>
+    </view>
+    <view style="font-size:17px;color:#353535">
+        <text>今天 Ubuntu 的显卡驱动悲剧了，于是进入 failsafe X。\r\n\r\n看图。\r\n\r\n现在这里没法翻蔷，随便找个地方贴图。\r\nhttp://paste.ubuntu.org.cn/71391</text>
+    </view>
+    <view style="font-size:14px;color:#888;margin-top:10px;display:flex;justify-content: space-between;">
+        <text>10条回复</text>
+        <text>反馈</text>
+    </view>
+</view>

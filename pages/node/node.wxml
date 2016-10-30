@@ -2,30 +2,14 @@
     <text style="color:#4ABC6A;font-size:17px;padding:20px;font-weight:bold;font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;">节点列表</text>
 
     <view style="display:flex;flex-wrap:wrap;padding:20px;">
-        <view style="display:flex;flex-direction: column;align-items: center;flex:0 0 33%;margin-bottom:1em">
-         <image src="http://cdn.v2ex.co/navatar/c4ca/4238/1_normal.png?m=1419840368" style="width:48px;height:48px;"/>
-         <text style="font-size:14px;color:#888">Project Babel</text>
-         <text style="font-size:13px;color:#888">1118</text>
-        </view>
-        <view style="display:flex;flex-direction: column;align-items: center;flex:0 0 33%;margin-bottom:1em">
-         <image src="http://cdn.v2ex.co/navatar/c4ca/4238/1_normal.png?m=1419840368" style="width:48px;height:48px;"/>
-         <text style="font-size:14px;color:#888">Project Babel</text>
-         <text style="font-size:13px;color:#888">1118</text>
-        </view>
-        <view style="display:flex;flex-direction: column;align-items: center;flex:0 0 33%;margin-bottom:1em">
-         <image src="http://cdn.v2ex.co/navatar/c4ca/4238/1_normal.png?m=1419840368" style="width:48px;height:48px;"/>
-         <text style="font-size:14px;color:#888">Project Babel</text>
-         <text style="font-size:13px;color:#888">1118</text>
-        </view>
-        <view style="display:flex;flex-direction: column;align-items: center;flex:0 0 33%;margin-bottom:1em">
-         <image src="http://cdn.v2ex.co/navatar/c4ca/4238/1_normal.png?m=1419840368" style="width:48px;height:48px;"/>
-         <text style="font-size:14px;color:#888">Project Babel</text>
-         <text style="font-size:13px;color:#888">1118</text>
-        </view>
-        <view style="display:flex;flex-direction: column;align-items: center;flex:0 0 33%;margin-bottom:1em">
-         <image src="http://cdn.v2ex.co/navatar/c4ca/4238/1_normal.png?m=1419840368" style="width:48px;height:48px;"/>
-         <text style="font-size:14px;color:#888">Project Babel</text>
-         <text style="font-size:13px;color:#888">1118</text>
-        </view>
+        <block wx:for="{{nodes}}">
+            <block style="display:flex;flex-wrap:wrap;">
+                <view style="display:flex;flex-direction: column;align-items: center;flex:0 0 33%;margin-bottom:1em">
+                    <image src="https://ooo.0o0.ooo/2016/10/30/581607ccf2c23.png" style="width:48px;height:48px;"/>
+                    <text style="font-size:14px;color:#353535;text-aligin:center;margin-top:10px;">{{item.title}}</text>
+                    <text style="font-size:13px;color:#888;text-aligin:center">{{item.topics}}</text>
+                </view>
+            </block>
+        </block>
     </view>
 </view>

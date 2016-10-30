@@ -1,20 +1,52 @@
 Page({
-  data:{
-    
+  data: {
+    hot: [],
+    new: [],
+    selected: true,
+    selected1: false
   },
-  onLoad:function(options){
-   
+  selected: function (e) {
+    this.setData({
+      selected1: false,
+      selected: true
+    })
   },
-  onReady:function(){
-   
+  selected1: function (e) {
+    this.setData({
+      selected: false,
+      selected1: true
+    })
   },
-  onShow:function(){
-   
+  onLoad: function (options) {
+    var that = this;
+    wx.request({
+      url: 'https://www.v2ex.com/api/topics/hot.json',
+      method: 'GET',
+      success: function (res) {
+        that.setData({
+          hot: res.data,
+        })
+        console.log(res.data);
+      },
+      fail: function () {
+        // fail
+      },
+    });
+    wx.request({
+      url: 'https://www.v2ex.com/api/topics/latest.json',
+      method: 'GET',
+      success: function (res) {
+        that.setData({
+          new: res.data,
+        })
+        console.log(res.data);
+      },
+      fail: function () {
+        // fail
+      },
+    })
   },
-  onHide:function(){
-    
-  },
-  onUnload:function(){
-   
+  navTo:function(e){
+    console.log(e.currentTarget.id)
   }
 })

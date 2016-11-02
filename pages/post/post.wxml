@@ -1,14 +1,22 @@
-<view style="display:flex;flex-direction: column;margin:10px;">
-    <text style="font-size:20px;">{{post.title}}</text>
-    <view style="font-size:14px;color:#888;margin-top:10px;margin-bottom:10px;">
-        <text>{{post.member.username}}</text>
-        <text style="margin-left:20px;">时间</text>
+<view class="postBox">
+    <text class="postTitle">{{post.title}}</text>
+    <view class="postInfo">
+        <text id="{{post.member.username}}" catchtap="navTo">{{post.member.username}}</text>
+        <text style="margin-left:20px;">{{post.created}}</text>
     </view>
-    <view style="font-size:17px;color:#353535">
+    <view class="postContent">
         <text>{{post.content}}</text>
     </view>
-    <view style="font-size:14px;color:#888;margin-top:10px;display:flex;justify-content: space-between;">
+    <view class="postReply">
         <text>{{post.replies}}条回复</text>
         <text>{{post.node.title}}</text>
+    </view>
+</view>
+<view class="commentBox">
+    <view  wx:for="{{comment}}">
+        <view class="comment">
+            <text style="font-size:14px;color:#888888">{{item.member.username}}</text>
+            <text style="font-size:18px;color:#353535">{{item.content}}</text>
+        </view>
     </view>
 </view>

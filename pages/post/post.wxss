@@ -1,0 +1,21 @@
+.postBox{
+    display:flex;flex-direction: column;margin:10px;
+}
+.postTitle{
+    font-size:20px;
+}
+.postInfo{
+    font-size:14px;color:#888;margin-top:10px;margin-bottom:10px;
+}
+.postContent{
+    font-size:17px;color:#353535
+}
+.postReply{
+    font-size:14px;color:#888;margin-top:10px;display:flex;justify-content: space-between;
+}
+.commentBox{
+    display:flex;flex-direction: column;margin:5px;
+}
+.comment{
+   display:flex;flex-direction:column;margin-top:10px;
+}

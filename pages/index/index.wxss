@@ -1,17 +1,8 @@
-.nav{
-    width:100%;height:100rpx;display:flex;flex-direction:row;
+.commonBox{
+    width: 100%;display:flex;background-color: #FFFFFF;flex-direction:column;
 }
-.default{
-    line-height:100rpx;text-align:center;flex:1;border-right:1px solid gainsboro;color:#000;font-weight:bold;font-size:40rpx;
-}
-.red{
-    line-height:100rpx;text-align:center;color:#34B457;flex:1;border-right:1px solid gainsboro;font-weight:bold;font-size:40rpx;
-}
-.show{
-    display:block;
-}
-.hidden{
-    display:none;
+.commonText{
+    color:#4ABC6A;font-size:17px;font-weight:bold;font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;height:30px;
 }
 .postBox{
     flex-direction:column;flex-wrap:wrap;border-bottom:5px solid #EFEFF3;

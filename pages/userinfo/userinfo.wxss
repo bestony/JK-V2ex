@@ -1,0 +1,28 @@
+.infoBox{
+    flex-direction:column;flex-wrap:wrap;border-bottom:5px solid #EFEFF3;text-align:center;justify-content: center;
+}
+.infoImage{
+    width:48px;height:48px;margin-top:20px;margin-bottom:20px;
+}
+.infoText{
+    display:block;margin:10px
+}
+.postBox{
+    flex-direction:column;flex-wrap:wrap;border-bottom:5px solid #EFEFF3;
+}
+
+.postTitleBox{
+    margin:5px;
+}
+.postTitle{
+    font-size:17px;
+}
+.postReplyBox{
+    flex-basis: 100%; display: flex;justify-content: space-between;margin:5px;
+}
+.postReply{
+    font-size:13px;color:#888
+}
+.postNode{
+    font-size:13px;color:#888;border:solid 1px;border-radius:3px;padding-left:5px;padding-right:5px
+}

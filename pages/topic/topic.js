@@ -46,7 +46,10 @@ Page({
       },
     })
   },
-  navTo:function(e){
-    console.log(e.currentTarget.id)
+  navTo: function (e) {
+    //console.log(e.currentTarget.id)
+    wx.navigateTo({
+      url: '../post/post?postid=' + e.currentTarget.id
+    })
   }
 })

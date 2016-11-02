@@ -14,16 +14,10 @@ Page({
      },
    })
   },
-  onReady:function(){
-    
-  },
-  onShow:function(){
-  
-  },
-  onHide:function(){
-   
-  },
-  onUnload:function(){
-   
+  navTo: function (e) {
+    console.log(e.currentTarget.id)
+    wx.navigateTo({
+      url: '../nodeinfo/nodeinfo?nodeid=' + e.currentTarget.id
+    })
   }
 })

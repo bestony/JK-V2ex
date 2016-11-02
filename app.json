@@ -4,7 +4,8 @@
     "pages/node/node",
     "pages/topic/topic",
     "pages/post/post",
-    "pages/user/user"
+    "pages/nodeinfo/nodeinfo",
+    "pages/userinfo/userinfo"
   ],
   "window": {
     "backgroundTextStyle": "light",

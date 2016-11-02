@@ -8,7 +8,7 @@
         
                 <view class="postBox" id="{{post.id}}" catchtap="navTo">
                 <view class="postMemberBox">
-                    <image src="{{post.member.avatar_mini}}"  class="postAvatar" />
+                    <image src="https:{{post.member.avatar_mini}}"  class="postAvatar" />
                     <text  class="postMember">{{post.member.username}}</text>
                 </view>
                 <view class="postTitleBox">
@@ -27,7 +27,7 @@
         
                 <view class="postBox" id="{{post.id}}" catchtap="navTo">
                 <view class="postMemberBox">
-                    <image src="{{post.member.avatar_mini}}"  class="postAvatar" />
+                    <image src="https:{{post.member.avatar_mini}}"  class="postAvatar" />
                     <text  class="postMember">{{post.member.username}}</text>
                 </view>
                 <view class="postTitleBox">
